@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class GreetingController {
 		
 		@GetMapping("/greeting")
-		public String greeting(@RequestParam(name="name", required=false, defaultValue="Team") String name, Model model) {
+		public String greeting(@RequestParam(name="name", required=false, defaultValue="Batch2") String name, Model model) {
 			// logic reading time and greet people Good Morning, Good noon, Good Afternoon, Good Evening etc
 			//g="Good Morning";
 			model.addAttribute("name",name);
